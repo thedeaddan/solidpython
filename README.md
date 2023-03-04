@@ -10,7 +10,6 @@ S - Принцип единственной ответственности (Sing
 
 **Пример**:
 
-python
 
 ```python
 # Плохой пример
@@ -38,7 +37,6 @@ O - Принцип открытости/закрытости (Open/Closed Princi
 
 **Пример**:
 
-python
 
 ```python
 # Плохой пример
@@ -60,7 +58,6 @@ class Triangle(Shape):
         print("Drawing a triangle...")
 ```
 
-python
 
 ```python
 # Хороший пример
@@ -88,7 +85,6 @@ L - Принцип подстановки Барбары Лисков (Liskov Su
 
 **Пример**:
 
-python
 
 ```python
 # Хороший пример
@@ -105,7 +101,6 @@ class Penguin(Bird):
         raise NotImplementedError
 ```
 
-python
 
 ```python
 # Плохой пример
@@ -127,8 +122,6 @@ I - Принцип разделения интерфейса (Interface Segregat
 Клиенты не должны зависеть от интерфейсов, которые они не используют. Это означает, что интерфейсы должны быть маленькими и специфичными для каждого клиента.
 
 **Пример**:
-
-python
 
 ```python
 # Плохой пример
@@ -155,8 +148,6 @@ class Fax(Machine):
         print("Sending a fax...")
 ```
 
-python
-
 ```python
 # Хороший пример
 class Printer:
@@ -179,8 +170,6 @@ D - Принцип инверсии зависимостей (Dependency Inversi
 
 **Пример**:
 
-python
-
 ```python
 # Плохой пример
 class Notification:
@@ -194,8 +183,6 @@ class Email:
     def send(self, message):
         print(f"Sending an email: {message}")
 ```
-
-python
 
 ```python
 # Хороший пример
